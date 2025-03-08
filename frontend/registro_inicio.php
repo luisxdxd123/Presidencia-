@@ -44,7 +44,7 @@
         </div>
         <div class="form-container sign-in">
             <form>
-                <h1>Inicia sesión</h1>
+                <h1>Inicia</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
