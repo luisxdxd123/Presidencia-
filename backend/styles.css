@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu > li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    min-width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.menu a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+.submenu, .subsubmenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style: none;
+    padding: 0;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-width: 140px;
+}
+
+.submenu li, .subsubmenu li {
+    display: block;
+}
+
+.submenu a, .subsubmenu a {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.submenu a::after, .subsubmenu a::after {
+    content: "";
+}
+
+.dropdown:hover > .submenu {
+    display: block;
+}
+
+.subsubmenu {
+    left: 100%;
+    top: 0;
+}
+
+.submenu .dropdown:hover > .subsubmenu {
+    display: block;
+}
+
+/* Flecha derecha para el submenú de Usuario */
+.submenu .dropdown > a::after {
+    content: " ▶";
+    font-size: 12px;
+}
